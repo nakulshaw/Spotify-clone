@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Your favourite music is here</title>
+    <link rel="stylesheet" href="spotStyle.css">
+
+</head>
+<body>
+    <!-- navigations buttons and logo -->
+    <nav>
+        <button class="navButtons" id="nB1">N</button>
+        <div class="searchWrapper">
+            <div class="searchBar" >
+                <input type="text" id="searchText" placeholder="Search..." >
+                <button type="submit" class="submit"><img src="search-icon-png-21.png" class="searchImage"></button>
+            </div>
+        </div>
+        
+        
+        <img src="spotify-logo-image-vector-37039882.jpg" alt="Spotify" class="spotifyLogo"></img>
+    </nav>
+
+    <!-- trending songlist -->
+    <h1>Trending Songs</h1>
+    <div class="trendingSongList">
+        <button class="songItems aajkiraat"><img src="aajkiraatimg.png" class="songImages"><p>Aaj ki raat</p></button>
+        <button class="songItems aasakooda"><img src="aasakoodaimg.png" class="songImages"><p>Aasa kooda</p></button>
+        <button class="songItems aayinai"><img src="aayinaiimg.png" class="songImages"><p>Aayi nai</p></button>
+        <button class="songItems daku"><img src="dakuimg.png" class="songImages"><p>Daku</p></button>
+        <button class="songItems diltujaantu"><img src="diltujaantuimg.png" class="songImages"><p>Dil tu jaan tu</p></button>
+        <button class="songItems excuses"><img src="excusesimg.png" class="songImages"><p>Excuses</p></button>
+        <button class="songItems findingher"><img src="findingherimg.png" class="songImages"><p>Finding her</p></button>
+        <button class="songItems gulabisadi"><img src="gulabisadiimg.png" class="songImages"><p>Gulabi sadi</p></button>
+        
+    </div>
+    <!-- recent songlist -->
+    <h1>Recommendations</h1>
+    <div class="albums" id="recents">
+        <button class="songItems2 aajkiraat"><img src="aajkiraatimg.png" class="songImages2"><p>Aaj ki raat</p></button>
+        <button class="songItems2 aasakooda"><img src="aasakoodaimg.png" class="songImages2"><p>Aasa kooda</p></button>
+        <button class="songItems2 aayinai"><img src="aayinaiimg.png" class="songImages2"><p>Aayi nai</p></button>
+        <button class="songItems2 daku"><img src="dakuimg.png" class="songImages2"><p>Daku</p></button>
+        <button class="songItems2 diltujaantu"><img src="diltujaantuimg.png" class="songImages2"><p>Dil tu jaan tu</p></button>
+        <button class="songItems2 excuses"><img src="excusesimg.png" class="songImages2"><p>Excuses</p></button>
+        <button class="songItems2 findingher"><img src="findingherimg.png" class="songImages2"><p>Finding Her</p></button>
+        <button class="songItems2 gulabisadi"><img src="gulabisadiimg.png" class="songImages2"><p>Gulaabi Saari</p></button>
+        <button class="songItems2 jhol"><img src="jholimg.png" class="songImages2"><p>Jhol</p></button>
+        <button class="songItems2 kingshit"><img src="kingshitimg.png" class="songImages2"><p>King shit</p></button>
+        <button class="songItems2 laalpari"><img src="laal pari.png" class="songImages2"><p>Laal PariLaal Pari</p></button>
+        <button class="songItems2 nadaaniyan"><img src="naadaniyaimg.png" class="songImages2"><p>Nadaaniyan</p></button>
+        <button class="songItems2 paththavaikkum"><img src="paththvaikkum.png" class="songImages2"><p>Paththavaikkum</p></button>
+        <button class="songItems2 qatal"><img src="qatalimg.png" class="songImages2"><p>Qatal</p></button>
+        <button class="songItems2 shaky"><img src="shakyimg.png" class="songImages2"><p>Shaky</p></button>
+        <button class="songItems2 soulmate"><img src="soulmateimg.png" class="songImages2"><p>Soulmate</p></button>
+        <button class="songItems2 vehaniya"><img src="vehaniyaimg.png" class="songImages2"><p>Ve haniya</p></button>
+        <button class="songItems2 yetunekyakiya"><img src="yetunekyakiyaimg.png" class="songImages2"><p>Ye tune kya kiya</p></button>
+        
+    </div>
+    <!-- top mixes songlist -->
+    <h1>Top Mixes</h1>
+    <div class="albums" id="topMixes">
+        <button class="songItems2 jhol"><img src="jholimg.png" class="songImages2"><p>Jhol</p></button>
+        <button class="songItems2 soulmate"><img src="soulmateimg.png" class="songImages2"><p>Soulmate</p></button>
+        <button class="songItems2 vehaniya"><img src="vehaniyaimg.png" class="songImages2"><p>Ve haniya</p></button>
+        <button class="songItems2 findingher"><img src="findingherimg.png" class="songImages2"><p>Finding Her</p></button>
+        <button class="songItems2 gulabisadi"><img src="gulabisadiimg.png" class="songImages2"><p>Gulaabi Saari</p></button>
+        <button class="songItems2 laalpari"><img src="laal pari.png" class="songImages2"><p>Laal PariLaal Pari</p></button>
+        <button class="songItems2 kingshit"><img src="kingshitimg.png" class="songImages2"><p>King shit</p></button>
+        <button class="songItems2 qatal"><img src="qatalimg.png" class="songImages2"><p>Qatal</p></button>
+        <button class="songItems2 diltujaantu"><img src="diltujaantuimg.png" class="songImages2"><p>Dil tu jaan tu</p></button>
+        <button class="songItems2 aasakooda"><img src="aasakoodaimg.png" class="songImages2"><p>Aasa kooda</p></button>
+        <button class="songItems2 nadaaniyan"><img src="naadaniyaimg.png" class="songImages2"><p>Nadaaniyan</p></button>
+        <button class="songItems2 aajkiraat"><img src="aajkiraatimg.png" class="songImages2"><p>Aaj ki raat</p></button>
+        <button class="songItems2 aayinai"><img src="aayinaiimg.png" class="songImages2"><p>Aayi nai</p></button>
+        <button class="songItems2 paththavaikkum"><img src="paththvaikkum.png" class="songImages2"><p>Paththavaikkum</p></button>
+        <button class="songItems2 yetunekyakiya"><img src="yetunekyakiyaimg.png" class="songImages2"><p>Ye tune kya kiya</p></button>
+        <button class="songItems2 excuses"><img src="excusesimg.png" class="songImages2"><p>Excuses</p></button>
+        <button class="songItems2 daku"><img src="dakuimg.png" class="songImages2"><p>Daku</p></button>
+        <button class="songItems2 shaky"><img src="shakyimg.png" class="songImages2"><p>Shaky</p></button>
+
+    </div>
+    <!-- popular albums and singles songlist -->
+    <h1>Popular albums and Singles</h1>
+    <div class="albums" id="popularAlbums">
+        <button class="songItems2 yetunekyakiya"><img src="yetunekyakiyaimg.png" class="songImages2"><p>Ye tune kya kiya</p></button>
+        <button class="songItems2 excuses"><img src="excusesimg.png" class="songImages2"><p>Excuses</p></button>
+        <button class="songItems2 soulmate"><img src="soulmateimg.png" class="songImages2"><p>Soulmate</p></button>
+        <button class="songItems2 gulabisadi"><img src="gulabisadiimg.png" class="songImages2"><p>Gulaabi Saari</p></button>
+        <button class="songItems2 kingshit"><img src="kingshitimg.png" class="songImages2"><p>King shit</p></button>
+        <button class="songItems2 laalpari"><img src="laal pari.png" class="songImages2"><p>Laal PariLaal Pari</p></button>
+        <button class="songItems2 aayinai"><img src="aayinaiimg.png" class="songImages2"><p>Aayi nai</p></button>
+        <button class="songItems2 paththavaikkum"><img src="paththvaikkum.png" class="songImages2"><p>Paththavaikkum</p></button>
+        <button class="songItems2 jhol"><img src="jholimg.png" class="songImages2"><p>Jhol</p></button>
+        <button class="songItems2 vehaniya"><img src="vehaniyaimg.png" class="songImages2"><p>Ve haniya</p></button>
+        <button class="songItems2 nadaaniyan"><img src="naadaniyaimg.png" class="songImages2"><p>Nadaaniyan</p></button>
+        <button class="songItems2 daku"><img src="dakuimg.png" class="songImages2"><p>Daku</p></button>
+        <button class="songItems2 aajkiraat"><img src="aajkiraatimg.png" class="songImages2"><p>Aaj ki raat</p></button>
+        <button class="songItems2 findingher"><img src="findingherimg.png" class="songImages2"><p>Finding Her</p></button>
+        <button class="songItems2 aasakooda"><img src="aasakoodaimg.png" class="songImages2"><p>Aasa kooda</p></button>
+        <button class="songItems2 diltujaantu"><img src="diltujaantuimg.png" class="songImages2"><p>Dil tu jaan tu</p></button>
+        <button class="songItems2 qatal"><img src="qatalimg.png" class="songImages2"><p>Qatal</p></button>
+        <button class="songItems2 shaky"><img src="shakyimg.png" class="songImages2"><p>Shaky</p></button>
+    </div>
+    <!-- india's best songlist -->
+    <h1>India's Best</h1>
+    <div class="albums" id="indiasBest">
+        <button class="songItems2 aayinai"><img src="aayinaiimg.png" class="songImages2"><p>Aayi nai</p></button>
+        <button class="songItems2 soulmate"><img src="soulmateimg.png" class="songImages2"><p>Soulmate</p></button>
+        <button class="songItems2 gulabisadi"><img src="gulabisadiimg.png" class="songImages2"><p>Gulaabi Saari</p></button>
+        <button class="songItems2 excuses"><img src="excusesimg.png" class="songImages2"><p>Excuses</p></button>
+        <button class="songItems2 findingher"><img src="findingherimg.png" class="songImages2"><p>Finding Her</p></button>
+        <button class="songItems2 shaky"><img src="shakyimg.png" class="songImages2"><p>Shaky</p></button>
+        <button class="songItems2 kingshit"><img src="kingshitimg.png" class="songImages2"><p>King shit</p></button>
+        <button class="songItems2 paththavaikkum"><img src="paththvaikkum.png" class="songImages2"><p>Paththavaikkum</p></button>
+        <button class="songItems2 jhol"><img src="jholimg.png" class="songImages2"><p>Jhol</p></button>
+        <button class="songItems2 aajkiraat"><img src="aajkiraatimg.png" class="songImages2"><p>Aaj ki raat</p></button>
+        <button class="songItems2 laalpari"><img src="laal pari.png" class="songImages2"><p>Laal PariLaal Pari</p></button>
+        <button class="songItems2 vehaniya"><img src="vehaniyaimg.png" class="songImages2"><p>Ve haniya</p></button>
+        <button class="songItems2 daku"><img src="dakuimg.png" class="songImages2"><p>Daku</p></button>
+        <button class="songItems2 diltujaantu"><img src="diltujaantuimg.png" class="songImages2"><p>Dil tu jaan tu</p></button>
+        <button class="songItems2 aasakooda"><img src="aasakoodaimg.png" class="songImages2"><p>Aasa kooda</p></button>
+        <button class="songItems2 yetunekyakiya"><img src="yetunekyakiyaimg.png" class="songImages2"><p>Ye tune kya kiya</p></button>
+        <button class="songItems2 qatal"><img src="qatalimg.png" class="songImages2"><p>Qatal</p></button>
+        <button class="songItems2 nadaaniyan"><img src="naadaniyaimg.png" class="songImages2"><p>Nadaaniyan</p></button>
+    </div>
+    <!-- song range bar -->
+    <div class="rangeContainer">
+        <div class="range">
+            <input type="range" name="rangeBar" class="rangeBar" id="songRange">
+            <div class="playButtons">
+                <img src="round-left-button.svg" class="stepBackward">
+                <img src="playimage.png" class="masterPlay" >
+                <img src="arrow-right-thin.svg"  class="stepForward">
+                <p class="duration">duration</p>
+            </div>
+            <div class="authorClass">
+                <p>By</p>
+                <p class="songNameAuthor">author</p>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+<script src="spotScript.js"></script>
+</html>

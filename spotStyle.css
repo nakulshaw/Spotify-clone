@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    margin: 1rem 0.6rem 1rem 0.6rem;
+    overflow-x: hidden;
+    display: flex;    
+    flex-direction: column;
+    height: 260vh;
+    
+}
+/* navigation bar */
+nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0.5rem;
+    margin: 2rem 0rem 2rem 0rem;
+    min-width: 100vw;
+    
+}
+
+/* searchbar */
+.searchWrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+.searchBar{
+    position: absolute;
+    right: 8rem;
+    top: 0.5rem;
+}
+.searchBar input[type=text] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10rem;
+}
+.searchBar button{
+    padding: 0.5rem 0.6rem;
+    border: none;
+    border-radius: 10rem;
+
+}
+.searchBar button:hover{
+    cursor: pointer;
+    box-shadow: 3px -2px 5px 1px #0FFF50;
+}
+.searchBar::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.searchImage{
+    height: 1rem;
+}
+
+.spotifyLogo{
+    width: 4.5rem;
+    border-radius: 10rem;
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
+}
+  /* navigation buttons */
+.navButtons{ 
+    border-radius: 50px;
+    margin-left: 0.3rem;
+    padding: 1px 8px;
+    background-color: grey;
+    border: 0;
+    font-size: 1rem;
+}
+.navButtons:hover{
+    cursor: pointer;
+}
+#nB1{
+    background-color:#0FFF50;
+    padding: 1px 5px;
+    font-weight: bold;
+}
+
+/* trending songlist design */
+.trendingSongList{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    min-width: 100vw;
+    min-height: 30vh;
+    margin: 4rem 0rem;
+    
+}
+.songItems{
+    width: 48vw;
+    margin: 0.1rem 0.2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.songItems:hover{
+    background-color: #0FFF50;
+    cursor: pointer;
+}
+
+.songImages{
+    height: 1.5rem;
+    border-radius: 2px;
+    
+}
+
+/* other albums or single song design */
+.albums{
+    
+    scrollbar-width: none;
+    ::-webkit-scrollbar{display: none;}
+    
+}
+h1{
+    color: white;
+    margin: 0.5rem;
+}
+
+#recents{
+    width: 100vw;
+    height:14rem;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    
+}
+#topMixes{
+    width: 100vw;
+    height:14rem;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    
+}
+#popularAlbums{
+    width: 100vw;
+    height:14rem;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    
+}
+#indiasBest{
+    width: 100vw;
+    height:14rem;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+
+}
+.songItems2{
+    width: 8rem;
+    height: 8.5rem;
+    border-radius: 5px;
+    border: none;
+    margin: 1rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.songItems2:hover{
+    box-shadow: 2px -2px 5px #0FFF50;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor:pointer;
+}
+.songImages2{
+    width: 8rem;
+    height: 8rem;
+}
+.songItems2 p{
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/* rangeBar */
+.rangeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    
+}
+.range{
+    width: calc(100% - 2rem);
+    height: 4rem;
+    margin: 0rem 1rem 0rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    background-color:springgreen;
+    position: fixed;
+    bottom: 2rem;
+    
+    
+}
+.rangeBar{
+    width: 90vw;
+    accent-color:#d0f4de;
+
+}
+.rangeBar:hover{
+    cursor: pointer;
+}
+/* icons */
+.playButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.authorClass{
+    display: flex;
+    gap: 0.5rem;
+}
+.songNameAuthor{
+    position: sticky;
+    
+} 
+.masterPlay {
+  width: 2em;
+  height: 2em;
+  background-color: lime;
+  border-radius: 4rem;
+}
+.stepBackward {
+  width: 2em;
+  height: 2em;
+  background-color: lime;
+  border-radius: 4rem;
+}
+.stepForward {
+  width: 2em;
+  height: 2em;
+  background-color: lime;
+  border-radius: 4rem;
+}
+.masterPlay:hover,.stepBackward:hover,.stepForward:hover{
+    cursor: pointer;
+}
+
+/* at phone screen size */
+@media (max-width:360px) {
+    body{
+        overflow:auto;
+        min-height: 330vh;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    nav{
+        display: flex;
+        justify-content: left;
+        align-items:start;
+        overflow: hidden;
+        
+        
+        
+    }
+    .navButtons{
+        visibility: collapse;
+        
+        
+    }
+    #nB1{
+        visibility: visible;
+        position: sticky;
+        top: 2rem;
+        left: 0.1rem;
+        padding: 0.5rem 0.7rem;
+        
+    }
+    .spotifyLogo{
+        width: 3rem;
+        position: fixed;
+    }
+    .searchBar{
+        position: sticky;
+        top: 2.3rem;
+        left: 3rem;
+        display: flex;
+        
+        
+    }
+    .searchBar input[type=text] {
+        padding: 0.5rem 0.2rem;
+    }
+    
+    .songItems{
+        width: 44vw;
+        margin: 0.1rem 0.3rem;
+        padding: 1rem;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background-color: gray;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+    }
+    .rangeContainer{
+        position: absolute;
+        bottom: 1rem;
+        left: 0.5rem;
+        right: 0.5rem;
+    }
+    .playButtons{
+        gap:0.8rem;
+    }
+    
+}
+   
+
+@media (max-width:1100px){
+    body{
+        overflow: auto;
+    }
+}
