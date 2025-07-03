@@ -337,10 +337,10 @@ h1{
         left: 1rem;
         right: 0.5rem;
         
-        
     }
     .range{
         align-items: stretch;
+        padding:0.5rem 0.5rem;
     }
 
     .playButtons{
